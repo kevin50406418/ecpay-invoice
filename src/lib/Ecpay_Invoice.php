@@ -354,7 +354,7 @@ class ECPay_Invoice_Send
     protected static function process_return($sParameters = '', $HashKey = '', $HashIV = '', $Invoice_Method = ''){
 
         //宣告物件
-        $InvoiceMethod    = 'ECPay_'.$Invoice_Method;
+        $InvoiceMethod    = '\Ecpay\Invoice\ECPay_'.$Invoice_Method;
         self::$InvoiceObj_Return = new $InvoiceMethod;
 
         // 7字串轉陣列
