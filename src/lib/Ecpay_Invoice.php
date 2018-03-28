@@ -1,4 +1,5 @@
 <?php
+namespace Ecpay\Invoice;
 /*
 電子發票SDK
 版本:V1.0.180302
