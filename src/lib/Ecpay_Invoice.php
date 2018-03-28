@@ -323,7 +323,7 @@ class ECPay_Invoice_Send
     protected static function process_send($arParameters = array(), $HashKey = '', $HashIV = '', $Invoice_Method = '', $ServiceURL = ''){
 
         //宣告物件
-        $InvoiceMethod    = 'ECPay_'.$Invoice_Method;
+        $InvoiceMethod    = '\Ecpay\Invoice\ECPay_'.$Invoice_Method;
         self::$InvoiceObj = new $InvoiceMethod;
 
 
