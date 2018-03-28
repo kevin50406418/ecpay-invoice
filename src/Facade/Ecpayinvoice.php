@@ -8,6 +8,6 @@ class Ecpayinvoice extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return 'Ecpayinvoice';
+        return 'ecpayinvoice';
     }
 }
