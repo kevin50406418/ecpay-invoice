@@ -26,7 +26,7 @@ class EcpayinvoiceServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->singleton('ecpayinvoice', function ($app){
-            return new Ecpayinvoice;
+            return new Ecpay_Invoice;
         });
     }
 }

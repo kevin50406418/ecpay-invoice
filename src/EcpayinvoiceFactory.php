@@ -2,6 +2,6 @@
 
 namespace Kevin50406418\Ecpayinvoice;
 
-class EcpayinvoiceFactory extends \EcpayInvoice
+class EcpayinvoiceFactory extends \Ecpay\Invoice\EcpayInvoice
 {
 }

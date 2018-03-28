@@ -4,7 +4,7 @@ namespace Kevin50406418\Ecpayinvoice;
 
 use Kevin50406418\Ecpayinvoice\EcpayinvoiceFactory;
 
-class Ecpay
+class Ecpay_Invoice
 {
     private $instance = null;
 
