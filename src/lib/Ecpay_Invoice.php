@@ -324,7 +324,7 @@ class ECPay_Invoice_Send
 
         //宣告物件
         $InvoiceMethod    = '\Kevin50406418\Ecpayinvoice\lib\ECPay_'.$Invoice_Method;
-        self::$InvoiceObj_Return = new $$InvoiceMethod;
+        self::$InvoiceObj = new $InvoiceMethod();
 
 
         // 1寫入參數
@@ -355,7 +355,7 @@ class ECPay_Invoice_Send
 
         //宣告物件
         $InvoiceMethod    = '\Kevin50406418\Ecpayinvoice\lib\ECPay_'.$Invoice_Method;
-        self::$InvoiceObj_Return = new $$InvoiceMethod;
+        self::$InvoiceObj_Return = new $InvoiceMethod();
 
         // 7字串轉陣列
         $arParameters = ECPay_Invoice_Send::string_to_array($sParameters);
