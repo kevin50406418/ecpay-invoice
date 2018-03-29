@@ -1,5 +1,5 @@
 <?php
-namespace Ecpay\Invoice;
+namespace Kevin50406418\Ecpayinvoice\lib;
 /*
 電子發票SDK
 版本:V1.0.180302
@@ -323,8 +323,8 @@ class ECPay_Invoice_Send
     protected static function process_send($arParameters = array(), $HashKey = '', $HashIV = '', $Invoice_Method = '', $ServiceURL = ''){
 
         //宣告物件
-        $InvoiceMethod    = '\Ecpay\Invoice\ECPay_'.$Invoice_Method;
-        self::$InvoiceObj = new $InvoiceMethod;
+        $InvoiceMethod    = '\Kevin50406418\Ecpayinvoice\lib\ECPay_'.$Invoice_Method;
+        self::$InvoiceObj_Return = new $$InvoiceMethod;
 
 
         // 1寫入參數
@@ -354,8 +354,8 @@ class ECPay_Invoice_Send
     protected static function process_return($sParameters = '', $HashKey = '', $HashIV = '', $Invoice_Method = ''){
 
         //宣告物件
-        $InvoiceMethod    = '\Ecpay\Invoice\ECPay_'.$Invoice_Method;
-        self::$InvoiceObj_Return = new $InvoiceMethod;
+        $InvoiceMethod    = '\Kevin50406418\Ecpayinvoice\lib\ECPay_'.$Invoice_Method;
+        self::$InvoiceObj_Return = new $$InvoiceMethod;
 
         // 7字串轉陣列
         $arParameters = ECPay_Invoice_Send::string_to_array($sParameters);
